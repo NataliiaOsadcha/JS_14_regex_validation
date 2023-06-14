@@ -12,7 +12,7 @@ const phonePattern = /^[+\d(-)()]{10,13}$/;
 
 const nameInput = document.getElementById("name");
 const nameMessage = document.getElementById("name-massage");
-const namePattern = /[A-Z][a-z]+(\s[A-Z][a-z]+){2}/; 
+const namePattern = /[А-Я ІЇ][а-я ії]+(\s[А-Я ІЇ][а-я ії]+){2}/; 
 
 emailInput.addEventListener('input', (event) => {
   const email = event.target.value;
