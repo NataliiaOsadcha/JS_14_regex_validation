@@ -1,0 +1,77 @@
+@import url(reset.css);
+
+body {
+    background-color: darkgray;
+    box-sizing: border-box;
+}
+.container {
+    width: 400px;
+    margin: 100px auto;
+    position: relative;
+
+}
+
+.form {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+
+}
+
+.form > label {
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+}
+
+.input {
+    width: 100%;
+    padding: 15px 20px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+}
+.submit, .back-btn {
+    width: 100%;
+    padding: 15px ;
+    background: #1665f7;
+    border-radius: 30px;
+    border: none;
+    color: white;
+}
+
+.back-btn {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+
+.loader {
+    position: absolute;
+    top: 25px;
+    left: 130px;
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #3498db; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    display: none;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .show {
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
+
